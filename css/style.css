@@ -8,11 +8,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* NAVBAR */
 .navbar {
     background-color: rgba(255, 255, 255, 0.3);
     position: fixed;
     width: 100%;
+    z-index:1
 }
 
 .navbar-nav {
@@ -21,13 +22,7 @@
     transform: translatex(-97%);
 }
 
-.imgindex {
-    background: url(../images/granosfondo.jpg);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
+/* SECTION PRINCIPAL */
 .section_principal {
     height: 100vh;
     background-image: url(../images/granosfondo.jpg);
@@ -40,7 +35,6 @@
 }
 
 .section_principal h2 {
-    font-family: 'Cormorant Garamond', serif;
     padding: 0.5%;
     padding-inline: 8%;
     background-color: rgb(197, 165, 152);
@@ -52,6 +46,13 @@
     border-radius: 5px;
 }
 
+/* HOME */
+.imgindex {
+    background: url(../images/granosfondo.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
 .tarjetitas {
     background-color: rgb(197, 165, 152);
 }
@@ -62,7 +63,7 @@
 }
 
 
-
+/* NOSOTROS */
 .section_nosotros {
     background-image: url(../images/barista.jpg);
     background-size: cover;
@@ -75,7 +76,74 @@
     padding-inline: 5%;
 }
 
+/* CAFE */
+.container_cafe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "tipocafe_1 tipocafe_2"
+        "tipocafe_3 tipocafe_4";
+    width: 100%;
+    height: 100vh;
 
+
+}
+
+.container_cafe>div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(114, 105, 79);
+}
+
+.tipocafe_1 {
+    grid-area: tipocafe_1;
+    background-image: url(../images/tipo\ cafe\ 1.webp);
+    background-position: top;
+
+}
+
+.tipocafe_2 {
+    grid-area: tipocafe_2;
+    background-image: url(../images/tipo\ cafe\ 2.webp);
+    background-position: top;
+
+
+}
+
+.tipocafe_3 {
+    grid-area: tipocafe_3;
+    background-image: url(../images/tipo\ cafe\ 3.webp);
+    background-position: top;
+}
+
+.tipocafe_4 {
+    grid-area: tipocafe_4;
+    background-image: url(../images/tipo\ cafe\ 4.webp);
+    background-position: top;
+}
+
+
+/* CONTACTO */
+.section_contacto {
+    background-image: url(../images/cafeteria.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.form_contacto  {
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 20px;
+}
+
+/* FOOTER */
 footer {
     display: flex;
     align-items: center;
@@ -110,10 +178,13 @@ footer {
     transform: scale(1.1);
 }
 
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 480px) {
     .section_nosotros1 .section_nosotros2 {
         display: flex;
         flex-direction: row;
     }
+
 }
 
