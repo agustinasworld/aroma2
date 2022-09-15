@@ -1,0 +1,13 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index:1  
+}
+
+.navbar-nav {
+    position: absolute;
+    left: 97%;
+    transform: translatex(-97%);
+}
+

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-nav {
+  position: absolute;
+  left: 97%;
+  transform: translatex(-97%);
+}
+
+.section_principal {
+  height: 100vh;
+  background-image: url(../images/granosfondo.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-inline: 20%;
+  color: white;
+}
+.section_principal h2 {
+  padding: 0.5%;
+  padding-inline: 8%;
+  background-color: rgb(197, 165, 152);
+  border-radius: 30px;
+}
+.section_principal p {
+  background-color: rgba(148, 138, 138, 0.397);
+  border-radius: 5px;
+}
+
+.imgindex {
+  background: url(../images/granosfondo.jpg);
+}
+
+.section_nosotros {
+  background-image: url(../images/barista.jpg);
+}
+.section_nosotros .main_nosotros {
+  background-color: rgb(221, 215, 213);
+  padding-inline: 5%;
+}
+
+.tarjetitas {
+  background-color: rgb(197, 165, 152);
+}
+.tarjetitas .card:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: rgba(146, 136, 136, 0.3) 0px 19px 38px, rgba(102, 98, 98, 0.22) 0px 15px 12px;
+}
+
+.section_contacto {
+  background-image: url(../images/cafeteria.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.section_contacto .form_contacto {
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(240, 240, 240);
+  gap: 20px;
+}
+footer .wpp {
+  display: flex;
+  width: 25px;
+}
+footer .insta {
+  display: flex;
+  width: 25px;
+}
+footer .iconos:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}/*# sourceMappingURL=estilo.css.map */

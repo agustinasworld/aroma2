@@ -1,0 +1,38 @@
+.section_principal {
+    height: 100vh;
+    background-image: url(../images/granosfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-inline: 20%;
+    color: white;
+
+    h2 {
+        padding: 0.5%;
+        padding-inline: 8%;
+        background-color: rgb(197, 165, 152);
+        border-radius: 30px;
+    }
+
+    p {
+        background-color: rgba(148, 138, 138, 0.397);
+        border-radius: 5px;
+    }
+
+
+}
+
+.imgindex {
+    background: url(../images/granosfondo.jpg);
+
+}
+
+.section_nosotros {
+    background-image: url(../images/barista.jpg);
+
+
+    .main_nosotros {
+        background-color: rgb(221, 215, 213);
+        padding-inline: 5%;
+    }
+}
