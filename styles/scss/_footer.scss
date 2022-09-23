@@ -7,20 +7,17 @@ footer {
     background-color: rgb(240, 240, 240);
     gap: 20px;
 
-    .wpp {
+    .icono-whatsapp {
         display: flex;
         width: 25px;
+
+        &:hover {
+            transition: all .3s;
+            transform: scale(1.1);
+        }
     }
 
-    .insta {
-        display: flex;
-        width: 25px;
+    .icono-instagram {
+        @extend .icono-whatsapp
     }
-
-    .iconos:hover {
-        transition: all .3s;
-        transform: scale(1.1);
-        
-    }
-
 }

@@ -1,0 +1,22 @@
+.section_cafe {
+    padding-top: 20vh;
+}
+
+
+.tarjetas {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+
+    @mixin tarjetas-container {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .tarjetita {
+        @include tarjetas-container()
+    }
+}
