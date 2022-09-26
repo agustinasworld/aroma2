@@ -32,5 +32,11 @@
     .main_nosotros {
         background-color: rgb(221, 215, 213);
         padding-inline: 5%;
+
+        @media (min-width: 576px) { 
+            .section_principal1 {
+            display: none;
+            }
+         }
     }
 }

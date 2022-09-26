@@ -1,9 +1,15 @@
-.tarjetitas {
+.cards{
     background-color: $colorPrincipal ;
 
     .card:hover {
         transform: scale(1.1) translateY(-5px);
         box-shadow: rgba(146, 136, 136, 0.3) 0px 19px 38px, rgba(102, 98, 98, 0.22) 0px 15px 12px;
     }
+
+}
+
+.cards-cafe {
+    background-color: white;
+    transform: scale(0.9);
 
 }
