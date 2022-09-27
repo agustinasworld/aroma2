@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.808);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -47,15 +47,16 @@
 }
 
 .section_nosotros {
-  background-image: url(../images/barista.jpg);
+  background-color: rgb(197, 165, 152);
+  background-image: none;
 }
-.section_nosotros .main_nosotros {
+
+main {
   background-color: rgb(221, 215, 213);
-  padding-inline: 5%;
 }
 
 .cards {
-  background-color: rgb(197, 165, 152);
+  background-color: rgb(221, 215, 213);
 }
 .cards .card:hover {
   transform: scale(1.1) translateY(-5px);
@@ -63,39 +64,38 @@
 }
 
 .cards-cafe {
-  background-color: white;
   transform: scale(0.9);
 }
 
 .texto-con-fondo {
-  height: 60vh;
-  background-image: url(../images/granosfondo.jpg);
+  height: 50vh;
+  background-image: url(../images/footer.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   text-align: center;
   padding-inline: 20%;
   color: white;
 }
 
 .texto-con-fondo1 {
-  height: 30vh;
-  padding-top: 15vh;
+  height: 33vh;
+  padding-top: 3.8rem;
   background-image: none;
   background-color: rgb(197, 165, 152);
 }
 
 .section_contacto {
-  background-image: url(../images/cafeteria.jpg);
+  background-image: url(../images/contacto.jpg);
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 .section_contacto .form_contacto {
   background-color: rgba(255, 255, 255, 0.658);
   border-radius: 20px;
 }
 
-footer {
+.footer-iconos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,11 +104,45 @@ footer {
   background-color: rgb(240, 240, 240);
   gap: 20px;
 }
-footer .icono-whatsapp, footer .icono-instagram {
-  display: flex;
+.footer-iconos .icono-whatsapp, .footer-iconos .icono-aroma, .footer-iconos .icono-instagram {
   width: 25px;
 }
-footer .icono-whatsapp:hover, footer .icono-instagram:hover {
+.footer-iconos .icono-whatsapp:hover, .footer-iconos .icono-aroma:hover, .footer-iconos .icono-instagram:hover {
   transition: all 0.3s;
   transform: scale(1.1);
+}
+.footer-iconos .icono-aroma {
+  width: 75px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    left: 0;
+    right: 0;
+    top: 3.8rem;
+    transform: translate(0);
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.808);
+    height: calc(100vh - 3.8rem);
+  }
+  .texto-con-fondo p {
+    display: none;
+  }
+  .section_nosotros {
+    height: calc(100vh + 7rem);
+  }
+  .section-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-fundadora {
+    width: 100vh;
+  }
+}
+@media screen and (max-width: 560px) {
+  .section_nosotros {
+    padding-top: 3.8rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */

@@ -1,17 +1,16 @@
 .texto-con-fondo {
-    height: 60vh;
-    background-image: url(../images/granosfondo.jpg);
+    height: 50vh;
+    background-image: url(../images/footer.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: left;
     text-align: center;
     padding-inline: 20%;
     color: white;
 }
 
 .texto-con-fondo1 {
-    height: 30vh;
-    padding-top: 15vh;
+    height: 33vh;
+    padding-top: 3.8rem;
     background-image: none;
     background-color: $colorPrincipal;
 }
-

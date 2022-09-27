@@ -1,5 +1,5 @@
 .cards{
-    background-color: $colorPrincipal ;
+    background-color: rgb(221, 215, 213);
 
     .card:hover {
         transform: scale(1.1) translateY(-5px);
@@ -9,7 +9,6 @@
 }
 
 .cards-cafe {
-    background-color: white;
     transform: scale(0.9);
 
 }
