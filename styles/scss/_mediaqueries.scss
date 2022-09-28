@@ -16,7 +16,7 @@
 
     .section_nosotros {
         height: calc(100vh + 7rem);
-        
+
     }
 
     .section-historia {
@@ -29,13 +29,14 @@
         width: 100vh;
     }
 
-
 }
+
 
 @media screen and (max-width: 560px) {
     .section_nosotros {
-      padding-top: 3.8rem; 
-    } 
+        padding-top: 3.8rem;
+    }
 
-  
+
 }
+
