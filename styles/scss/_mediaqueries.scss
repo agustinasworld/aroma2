@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: center;
         background-color: $colorNavBar;
-        height: calc(100vh - 3.8rem);
+        min-height: calc(100vh - 3.8rem);
     }
 
     .texto-con-fondo p {
@@ -15,7 +15,7 @@
     }
 
     .section_nosotros {
-        height: calc(100vh + 7rem);
+        height: auto;
 
     }
 
@@ -26,7 +26,12 @@
     }
 
     .imagen-fundadora {
-        width: 100vh;
+        min-width: 90% ;
+        padding-inline: 0;
+    }
+
+    .cards {
+        margin-top: 0;
     }
 
 }
@@ -39,4 +44,3 @@
 
 
 }
-

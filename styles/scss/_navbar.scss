@@ -11,7 +11,7 @@
     transform: translatex(-97%);
 
 
-    $navitem: (active: rgba(206, 184, 160, 0.253));
+    $navitem: (active: rgba(160, 154, 148, 0.253));
 
     .nav-item:hover {
         background-color: map-get($navitem, active);
