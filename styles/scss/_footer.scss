@@ -29,10 +29,11 @@
 }
 
 .texto-con-fondo {
-    min-height: 50vh;
-    text-align: center;
-    background-color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
     padding-inline: 20%;
+    background-color: white;
     color: rgb(88, 87, 87);
+    text-align: center;
     font-weight: 500;
 }

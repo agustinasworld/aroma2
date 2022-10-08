@@ -15,6 +15,7 @@
 
     .nav-item:hover {
         background-color: map-get($navitem, active);
+        padding-inline: 1rem;
     }
 
 }

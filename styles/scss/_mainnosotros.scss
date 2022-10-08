@@ -1,13 +1,15 @@
 .main_nosotros {
-    padding: 1rem;
-    background-color: $colorSecundario;
+    padding: 2rem;
 
-    .manifiesto {
-        background-color: rgb(156, 150, 143);
-        padding: 1.5rem;
-        min-width: 50%;
-        color: rgb(230, 230, 230);
-        font-weight: 500;
+    .imagen-fundadora {
+        width: 50%;
+        object-fit: cover;
     } 
-
 }
+
+.manifiesto {
+    margin-top: 5%;
+    background-color: $colorSecundario;
+    color:black;
+    align-items: center;
+} 

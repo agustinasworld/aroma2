@@ -20,6 +20,7 @@
 }
 .navbar-nav .nav-item:hover {
   background-color: rgba(160, 154, 148, 0.253);
+  padding-inline: 1rem;
 }
 
 .section_principal {
@@ -46,7 +47,8 @@
   background-image: url(../images/barista.jpg);
 }
 
-.section_contacto, .section_cafe {
+.section_contacto,
+.section_cafe {
   padding-top: 4rem;
   text-align: center;
   background-color: white;
@@ -56,15 +58,19 @@
 }
 
 .main_nosotros {
-  padding: 1rem;
-  background-color: rgb(221, 215, 213);
+  padding: 2rem;
 }
-.main_nosotros .manifiesto {
-  background-color: rgb(156, 150, 143);
-  padding: 1.5rem;
-  min-width: 50%;
-  color: rgb(230, 230, 230);
-  font-weight: 500;
+.main_nosotros .imagen-fundadora {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.manifiesto {
+  margin-top: 5%;
+  background-color: rgb(221, 215, 213);
+  color: black;
+  align-items: center;
 }
 
 .cards {
@@ -77,10 +83,6 @@
 .cards .card:hover {
   transform: scale(1) translateY(-5px);
   box-shadow: rgba(146, 136, 136, 0.3) 0px 19px 38px, rgba(102, 98, 98, 0.22) 0px 15px 12px;
-}
-
-.cards-cafe {
-  transform: scale(0.9);
 }
 
 .main_contacto {
@@ -107,10 +109,9 @@
 .main_contacto .accordion-button::after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%40ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
-.main_contacto .btn {
-  margin-top: 2rem;
-  background-color: rgba(197, 165, 152, 0.5);
-  color: white;
+.main_contacto .btn-contacto {
+  margin-top: 1rem;
+  background-color: white;
 }
 .main_contacto .embed-container {
   position: relative;
@@ -150,11 +151,12 @@
 }
 
 .texto-con-fondo {
-  min-height: 50vh;
-  text-align: center;
-  background-color: white;
+  padding-bottom: 5%;
+  padding-top: 5%;
   padding-inline: 20%;
+  background-color: white;
   color: rgb(88, 87, 87);
+  text-align: center;
   font-weight: 500;
 }
 
@@ -175,6 +177,11 @@
   .section_nosotros {
     height: auto;
   }
+  .cards {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
   .section-historia {
     display: flex;
     flex-direction: column;
@@ -182,14 +189,5 @@
   }
   .imagen-fundadora {
     min-width: 90%;
-    padding-inline: 0;
-  }
-  .cards {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 560px) {
-  .section_nosotros {
-    padding-top: 3.8rem;
   }
 }/*# sourceMappingURL=estilo.css.map */

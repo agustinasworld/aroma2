@@ -1,19 +1,15 @@
-.cards{
+.cards {
     background-color: rgb(221, 215, 213);
- padding: 3rem;
+    padding: 3rem;
     
-    
+
+
     .card {
-       transition: all 0.25s;
+        transition: all 0.25s;
 
-       &:hover {
-        transform: scale(1) translateY(-5px);
-        box-shadow: rgba(146, 136, 136, 0.3) 0px 19px 38px, rgba(102, 98, 98, 0.22) 0px 15px 12px;
+        &:hover {
+            transform: scale(1) translateY(-5px);
+            box-shadow: rgba(146, 136, 136, 0.3) 0px 19px 38px, rgba(102, 98, 98, 0.22) 0px 15px 12px;
+        }
     }
-    }
-}
-
-.cards-cafe {
-    transform: scale(0.9);
-
 }
